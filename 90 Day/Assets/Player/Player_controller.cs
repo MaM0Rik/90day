@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 
 public class Player_controller : MonoBehaviour
 {
@@ -9,14 +10,13 @@ public class Player_controller : MonoBehaviour
 
     public CharacterController controller;
     public Transform cam;
-
+    
     public float speed = 4f;
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
 
     void Start()
     {
-
     }
 
     void Update()
